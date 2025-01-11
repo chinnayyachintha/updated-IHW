@@ -4,6 +4,12 @@ aws_region = "ca-central-1"
 # environment for the deployment
 environment = "dev"
 
+# specify tags to be assigned to resources
+tags = {
+  Environment = "dev"
+  Project     = "IHW"
+}
+
 # search anicillary
 bookingKey = "method.request.querystring.bookingKey"
 

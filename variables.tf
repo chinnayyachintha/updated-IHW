@@ -10,6 +10,12 @@ variable "environment" {
   description = "Environment for the deployment"
 }
 
+# Tags to be assigned to resources
+variable "tags" {
+  description = "A map of tags to assign to resources."
+  type        = map(string)
+}
+
 # parameter store
 variable "flairgate_apiuser" {
   type = string
